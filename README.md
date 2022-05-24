@@ -12,3 +12,16 @@ Passos para a execução:
   * npm start
 * Terminal 3: 
   * npm run cy:open
+
+
+# PageObjects
+***
+* Páginas:
+  * Logon
+  * Register (cadastro)
+  * Profile (perfil da ong)
+  * NewIncident (cadastro de casos) 
+
+* Cada página, possui:
+  * acoes -> index.js
+  * elementos -> elements.js
