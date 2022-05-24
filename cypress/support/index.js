@@ -20,7 +20,14 @@ import './commands'
 // require('./commands')
 
 before(() => {
-  // cy.server - para route e request
-  cy.server();
-  cy.createOng();
+
+});
+
+beforeEach(() => {
+    // cy.server nao mantem estado entre os testes.
+    // https://docs.cypress.io/api/commands/server.html#State-between-tests
+
+    // cy.server - para route e request
+    cy.server();
+    cy.createOng();
 });
